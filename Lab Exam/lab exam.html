@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Global Tech Connect Event</title>
+<link rel="stylesheet" href="lab exam.css">
+</head>
+
+<body>
+
+<h1>Global Tech Connect - Event Registration</h1>
+
+<div class="form-container">
+
+<form id="registrationForm">
+
+<label>Full Name</label>
+<input type="text" id="name">
+<span class="error" id="nameError"></span>
+
+<label>Professional Email</label>
+<input type="text" id="email">
+<span class="error" id="emailError"></span>
+
+<label>Company / Institution</label>
+<input type="text" id="company">
+
+<label>Attendance Type</label>
+
+<div class="radio">
+<input type="radio" name="attendance" value="Virtual"> Virtual
+<input type="radio" name="attendance" value="InPerson"> In-Person
+</div>
+
+<span class="error" id="attendanceError"></span>
+
+<button type="submit">Register Now</button>
+
+</form>
+
+<button id="analyticsBtn">Show Event Analytics</button>
+
+<div id="analyticsPanel" class="analytics">
+
+<p>Total Registrants: <span id="total">0</span></p>
+<p>Virtual Attendees: <span id="virtual">0</span></p>
+<p>In-Person Attendees: <span id="inperson">0</span></p>
+
+</div>
+
+</div>
+
+<script src="lab exam.js"></script>
+
+</body>
+</html>
